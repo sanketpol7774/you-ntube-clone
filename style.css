@@ -271,6 +271,7 @@
   padding: 15px 15px;
   border-top: 1px solid #ddd;
   overflow-y: scroll;
+
 }
 
 .videos__container {
@@ -285,6 +286,8 @@
 
   margin-bottom: 30px;
   z-index: index 0;
+  
+  
 }
 
 .video__thumbnail {
@@ -310,10 +313,10 @@
   display: flex;
   margin-top: 10px;
 }
-
-.title {
-  display: flex;
-  flex-direction: column;
+.title{
+    display: flex;
+    flex-direction: column;
+   /* background-color: yellow; */
 }
 
 .title h3 {
@@ -323,11 +326,13 @@
   margin-bottom: 6px;
 }
 
-.title a,
-span {
+.title a,span {
+    display: flex;
+    flex-direction: column;
   text-decoration: none;
   color: black;
   font-size: 14px;
+  /* background-color: violet; */
 }
 
 h1 {

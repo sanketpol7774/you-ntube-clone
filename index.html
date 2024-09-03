@@ -1,7 +1,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     
@@ -12,6 +12,8 @@
     href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
     rel="stylesheet"
 />
+
+<script src="Script.js" defer></script>
   </head>
   <body>
     <div class="header">
@@ -29,8 +31,10 @@
 
       <div class="header__search">
         <form action="">
-          <input type="text" placeholder="Search" />
-          <button><i class="material-icons">search</i></button>
+          <input id="searchinput" type="text" placeholder="Search" />
+
+          
+           <button > <i class="material-icons" onclick="creatcard()">search</i> </button> 
         </form>
       </div>
 
@@ -129,430 +133,19 @@
                <h4>Gulshan kumar </h4>
                <h4>Marathi cinema</h4>
         </div>
-    
-  
-    
-          <div class="videos__container">
-            
-            <div class="video">
-              <div class="video__thumbnail">
-                <img src="https://i.ytimg.com/vi/Ff93NxL65wI/maxresdefault.jpg" alt="" />
-              </div>
-              <div class="video__details">
-                
-                <div class="title">
-                  <h3>
-                    Top 5 youtuber vloger expose @soravjoshivlogs reality of yotubers
-                  </h3>
-                  <a href="">GyanGuruj</a>
-                  <span>10M Views • 3 Months Ago</span>
-                </div>
-              </div>
-            </div>
-           
-            <div class="video">
-              <div class="video__thumbnail">
-                <img src="https://miro.medium.com/v2/resize:fit:1400/1*60RQyL8WeifCvfJX8dQCcQ.jpeg" alt="" />
-              </div>
-              <div class="video__details">
-               
-                <div class="title">
-                  <h3>Build A Password Generator with React JS - Beginners Tutorial</h3>
-                  <a href="">FutureCoders</a>
-                  <span>10M Views • 3 Months Ago</span>
-                </div>
-              </div>
-            </div>
-           
-  
-            <div class="video">
-              <div class="video__thumbnail">
-                <img src="https://img.youtube.com/vi/46cXFUzR9XM/maxresdefault.jpg" alt="" />
-              </div>
-              <div class="video__details">
-             
-                <div class="title">
-                  <h3>Bella Ciao Full Song | La Casa De Papel | Money Heist | Netflix India</h3>
-                  <a href="">Netflix</a>
-                  <span>10M Views • 11 Months Ago</span>
-                </div>
-              </div>
-            </div>
-  
-            <div class="video">
-              <div class="video__thumbnail">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT04Edvunqx2oK0qrLREfMb7yFfgBzld1X_2Q&s" alt="" />
-              </div>
-              <div class="video__details">
-               
-                <div class="title">
-                  <h3>DON'T EVER GIVE UP - Elon Musk (Motivational Video)</h3>
-                  <a href=""> Chispa Motivation</a>
-                  <span>10M Views • 1 Month Ago</span>
-                </div>
-              </div>
-            </div>
-
-
-             <div class="video">
-              <div class="video__thumbnail">
-                <img src="https://i.ytimg.com/vi/Ff93NxL65wI/maxresdefault.jpg" alt="" />
-              </div>
-              <div class="video__details">
-                
-                <div class="title">
-                  <h3>
-                    Top 5 youtuber vloger expose @soravjoshivlogs reality of yotubers
-                  </h3>
-                  <a href="">GyanGuruj</a>
-                  <span>10M Views • 3 Months Ago</span>
-                </div>
-              </div>
-            </div>
-           
-            <div class="video">
-              <div class="video__thumbnail">
-                <img src="https://miro.medium.com/v2/resize:fit:1400/1*60RQyL8WeifCvfJX8dQCcQ.jpeg" alt="" />
-              </div>
-              <div class="video__details">
-               
-                <div class="title">
-                  <h3>Build A Password Generator with React JS - Beginners Tutorial</h3>
-                  <a href="">FutureCoders</a>
-                  <span>10M Views • 3 Months Ago</span>
-                </div>
-              </div>
-            </div>
-           
-  
-            <div class="video">
-              <div class="video__thumbnail">
-                <img src="https://img.youtube.com/vi/46cXFUzR9XM/maxresdefault.jpg" alt="" />
-              </div>
-              <div class="video__details">
-             
-                <div class="title">
-                  <h3>Bella Ciao Full Song | La Casa De Papel | Money Heist | Netflix India</h3>
-                  <a href="">Netflix</a>
-                  <span>10M Views • 11 Months Ago</span>
-                </div>
-              </div>
-            </div>
-  
-            <div class="video">
-              <div class="video__thumbnail">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT04Edvunqx2oK0qrLREfMb7yFfgBzld1X_2Q&s" alt="" />
-              </div>
-              <div class="video__details">
-               
-                <div class="title">
-                  <h3>DON'T EVER GIVE UP - Elon Musk (Motivational Video)</h3>
-                  <a href=""> Chispa Motivation</a>
-                  <span>10M Views • 1 Month Ago</span>
-                </div>
-              </div>
-            </div>
-
-
-             <div class="video">
-              <div class="video__thumbnail">
-                <img src="https://i.ytimg.com/vi/Ff93NxL65wI/maxresdefault.jpg" alt="" />
-              </div>
-              <div class="video__details">
-                
-                <div class="title">
-                  <h3>
-                    Top 5 youtuber vloger expose @soravjoshivlogs reality of yotubers
-                  </h3>
-                  <a href="">GyanGuruj</a>
-                  <span>10M Views • 3 Months Ago</span>
-                </div>
-              </div>
-            </div>
-           
-            <div class="video">
-              <div class="video__thumbnail">
-                <img src="https://miro.medium.com/v2/resize:fit:1400/1*60RQyL8WeifCvfJX8dQCcQ.jpeg" alt="" />
-              </div>
-              <div class="video__details">
-               
-                <div class="title">
-                  <h3>Build A Password Generator with React JS - Beginners Tutorial</h3>
-                  <a href="">FutureCoders</a>
-                  <span>10M Views • 3 Months Ago</span>
-                </div>
-              </div>
-            </div>
-           
-  
-            <div class="video">
-              <div class="video__thumbnail">
-                <img src="https://img.youtube.com/vi/46cXFUzR9XM/maxresdefault.jpg" alt="" />
-              </div>
-              <div class="video__details">
-             
-                <div class="title">
-                  <h3>Bella Ciao Full Song | La Casa De Papel | Money Heist | Netflix India</h3>
-                  <a href="">Netflix</a>
-                  <span>10M Views • 11 Months Ago</span>
-                </div>
-              </div>
-            </div>
-  
-            <div class="video">
-              <div class="video__thumbnail">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT04Edvunqx2oK0qrLREfMb7yFfgBzld1X_2Q&s" alt="" />
-              </div>
-              <div class="video__details">
-               
-                <div class="title">
-                  <h3>DON'T EVER GIVE UP - Elon Musk (Motivational Video)</h3>
-                  <a href=""> Chispa Motivation</a>
-                  <span>10M Views • 1 Month Ago</span>
-                </div>
-              </div>
-            </div>
-
-
-
-
-             <div class="video">
-              <div class="video__thumbnail">
-                <img src="https://i.ytimg.com/vi/Ff93NxL65wI/maxresdefault.jpg" alt="" />
-              </div>
-              <div class="video__details">
-                
-                <div class="title">
-                  <h3>
-                    Top 5 youtuber vloger expose @soravjoshivlogs reality of yotubers
-                  </h3>
-                  <a href="">GyanGuruj</a>
-                  <span>10M Views • 3 Months Ago</span>
-                </div>
-              </div>
-            </div>
-           
-            <div class="video">
-              <div class="video__thumbnail">
-                <img src="https://miro.medium.com/v2/resize:fit:1400/1*60RQyL8WeifCvfJX8dQCcQ.jpeg" alt="" />
-              </div>
-              <div class="video__details">
-               
-                <div class="title">
-                  <h3>Build A Password Generator with React JS - Beginners Tutorial</h3>
-                  <a href="">FutureCoders</a>
-                  <span>10M Views • 3 Months Ago</span>
-                </div>
-              </div>
-            </div>
-           
-  
-            <div class="video">
-              <div class="video__thumbnail">
-                <img src="https://img.youtube.com/vi/46cXFUzR9XM/maxresdefault.jpg" alt="" />
-              </div>
-              <div class="video__details">
-             
-                <div class="title">
-                  <h3>Bella Ciao Full Song | La Casa De Papel | Money Heist | Netflix India</h3>
-                  <a href="">Netflix</a>
-                  <span>10M Views • 11 Months Ago</span>
-                </div>
-              </div>
-            </div>
-  
-            <div class="video">
-              <div class="video__thumbnail">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT04Edvunqx2oK0qrLREfMb7yFfgBzld1X_2Q&s" alt="" />
-              </div>
-              <div class="video__details">
-               
-                <div class="title">
-                  <h3>DON'T EVER GIVE UP - Elon Musk (Motivational Video)</h3>
-                  <a href=""> Chispa Motivation</a>
-                  <span>10M Views • 1 Month Ago</span>
-                </div>
-              </div>
-            </div>
-
-
-             <div class="video">
-              <div class="video__thumbnail">
-                <img src="https://i.ytimg.com/vi/Ff93NxL65wI/maxresdefault.jpg" alt="" />
-              </div>
-              <div class="video__details">
-                
-                <div class="title">
-                  <h3>
-                    Top 5 youtuber vloger expose @soravjoshivlogs reality of yotubers
-                  </h3>
-                  <a href="">GyanGuruj</a>
-                  <span>10M Views • 3 Months Ago</span>
-                </div>
-              </div>
-            </div>
-           
-            <div class="video">
-              <div class="video__thumbnail">
-                <img src="https://miro.medium.com/v2/resize:fit:1400/1*60RQyL8WeifCvfJX8dQCcQ.jpeg" alt="" />
-              </div>
-              <div class="video__details">
-               
-                <div class="title">
-                  <h3>Build A Password Generator with React JS - Beginners Tutorial</h3>
-                  <a href="">FutureCoders</a>
-                  <span>10M Views • 3 Months Ago</span>
-                </div>
-              </div>
-            </div>
-           
-  
-            <div class="video">
-              <div class="video__thumbnail">
-                <img src="https://img.youtube.com/vi/46cXFUzR9XM/maxresdefault.jpg" alt="" />
-              </div>
-              <div class="video__details">
-             
-                <div class="title">
-                  <h3>Bella Ciao Full Song | La Casa De Papel | Money Heist | Netflix India</h3>
-                  <a href="">Netflix</a>
-                  <span>10M Views • 11 Months Ago</span>
-                </div>
-              </div>
-            </div>
-  
-            <div class="video">
-              <div class="video__thumbnail">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT04Edvunqx2oK0qrLREfMb7yFfgBzld1X_2Q&s" alt="" />
-              </div>
-              <div class="video__details">
-               
-                <div class="title">
-                  <h3>DON'T EVER GIVE UP - Elon Musk (Motivational Video)</h3>
-                  <a href=""> Chispa Motivation</a>
-                  <span>10M Views • 1 Month Ago</span>
-                </div>
-              </div>
-            </div>
-
-
-
-             <div class="video">
-              <div class="video__thumbnail">
-                <img src="https://i.ytimg.com/vi/Ff93NxL65wI/maxresdefault.jpg" alt="" />
-              </div>
-              <div class="video__details">
-                
-                <div class="title">
-                  <h3>
-                    Top 5 youtuber vloger expose @soravjoshivlogs reality of yotubers
-                  </h3>
-                  <a href="">GyanGuruj</a>
-                  <span>10M Views • 3 Months Ago</span>
-                </div>
-              </div>
-            </div>
-           
-            <div class="video">
-              <div class="video__thumbnail">
-                <img src="https://miro.medium.com/v2/resize:fit:1400/1*60RQyL8WeifCvfJX8dQCcQ.jpeg" alt="" />
-              </div>
-              <div class="video__details">
-               
-                <div class="title">
-                  <h3>Build A Password Generator with React JS - Beginners Tutorial</h3>
-                  <a href="">FutureCoders</a>
-                  <span>10M Views • 3 Months Ago</span>
-                </div>
-              </div>
-            </div>
-           
-  
-            <div class="video">
-              <div class="video__thumbnail">
-                <img src="https://img.youtube.com/vi/46cXFUzR9XM/maxresdefault.jpg" alt="" />
-              </div>
-              <div class="video__details">
-             
-                <div class="title">
-                  <h3>Bella Ciao Full Song | La Casa De Papel | Money Heist | Netflix India</h3>
-                  <a href="">Netflix</a>
-                  <span>10M Views • 11 Months Ago</span>
-                </div>
-              </div>
-            </div>
-  
-            <div class="video">
-              <div class="video__thumbnail">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT04Edvunqx2oK0qrLREfMb7yFfgBzld1X_2Q&s" alt="" />
-              </div>
-              <div class="video__details">
-               
-                <div class="title">
-                  <h3>DON'T EVER GIVE UP - Elon Musk (Motivational Video)</h3>
-                  <a href=""> Chispa Motivation</a>
-                  <span>10M Views • 1 Month Ago</span>
-                </div>
-              </div>
-            </div>
-
-
-
-
-
-
-
-
-             
-
-                
-    
-  
-          
 
 
         
+        <div class="videos__container">
+
+
+   
+
+
+
+
     </div>
 
-    </div>
-
-
-
-<!-- 
-
-<div class="contentarea">
-  <div class="camera">
-    <video id="video">Video stream not available.</video>
-    <button id="start">Start Camera</button>
-  </div>
-  <canvas id="canvas"> </canvas>
-  <div class="output">
-    <img id="photo" alt="The screen capture will appear in this box." />
-  </div>
-</div>
-
-<script>
-  document
-   .querySelector('#start')
-   .addEventListener('click', (ev) => {
-      // remove the button once clicked
-      ev.target.remove();
-      startup();
-    });
-
-  function startup() {
-    navigator.mediaDevices
-     .getUserMedia({ video: true, audio: false })
-     .then((stream) => {
-        video.srcObject = stream;
-        video.play();
-      })
-     .catch((err) => {
-        console.error(err);
-      });
-  }
-</script>
- -->
 
 
 
@@ -565,11 +158,8 @@
 
 
 
-
-
-    <script src="Script.js"></script>
+   
   
   </body>
 </html>
-
 
